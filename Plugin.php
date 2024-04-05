@@ -1,7 +1,7 @@
-<?php namespace ToughDeveloper\ImageResizer;
+<?php namespace WebBook\ImageResizer;
 
 use System\Classes\PluginBase;
-use ToughDeveloper\ImageResizer\Classes\Image;
+use WebBook\ImageResizer\Classes\Image;
 use Validator;
 
 /**
@@ -17,11 +17,11 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name'        => 'toughdeveloper.imageresizer::lang.plugin.name',
-            'description' => 'toughdeveloper.imageresizer::lang.plugin.description',
+            'name'        => 'webbook.imageresizer::lang.plugin.name',
+            'description' => 'webbook.imageresizer::lang.plugin.description',
             'author'      => 'Tough Developer',
             'icon'        => 'icon-picture-o',
-            'homepage'    => 'https://github.com/toughdeveloper/oc-imageresizer-plugin'
+            'homepage'    => 'https://github.com/webbook/oc-imageresizer-plugin'
         ];
     }
 
@@ -33,9 +33,9 @@ class Plugin extends PluginBase
     public function registerPermissions()
     {
         return [
-            'toughdeveloper.imageresizer.access_settings' => [
-                'tab'   => 'toughdeveloper.imageresizer::lang.permission.tab',
-                'label' => 'toughdeveloper.imageresizer::lang.permission.label'
+            'webbook.imageresizer.access_settings' => [
+                'tab'   => 'webbook.imageresizer::lang.permission.tab',
+                'label' => 'webbook.imageresizer::lang.permission.label'
             ]
         ];
     }
@@ -81,12 +81,12 @@ class Plugin extends PluginBase
     {
         return [
             'settings' => [
-                'label'       => 'toughdeveloper.imageresizer::lang.settings.label',
+                'label'       => 'webbook.imageresizer::lang.settings.label',
                 'icon'        => 'icon-picture-o',
-                'description' => 'toughdeveloper.imageresizer::lang.settings.description',
-                'class'       => 'ToughDeveloper\ImageResizer\Models\Settings',
+                'description' => 'webbook.imageresizer::lang.settings.description',
+                'class'       => 'WebBook\ImageResizer\Models\Settings',
                 'order'       => 0,
-                'permissions' => ['toughdeveloper.imageresizer.access_settings']
+                'permissions' => ['webbook.imageresizer.access_settings']
             ]
         ];
     }

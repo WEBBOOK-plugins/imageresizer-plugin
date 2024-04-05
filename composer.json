@@ -1,11 +1,30 @@
 {
-    "name": "toughdeveloper/imageresizer",
+    "name": "webbook/imageresizer-plugin",
     "type": "october-plugin",
-    "description": "October CMS Plugin to resize and compress images.",
-    "license": "MIT",
-    "website": "https://octobercms.com/plugin/toughdeveloper-imageresizer",
+    "description": "BOctober CMS Plugin to resize and compress images.",
+    "keywords": [
+        "october",
+        "cms",
+        "blog",
+        "plugin"
+    ],
+    "authors": [
+        {
+            "name": "Martin Zbořil",
+            "email": "martin@webbook.page",
+            "role": "Co-founder"
+        },
+        {
+            "name": "Jiří Synáček",
+            "email": "jirka@webbook.page",
+            "role": "Co-founder"
+        }
+    ],
     "require": {
+        "php": "^8.0.2",
+        "october/rain": ">=3.0",
         "composer/installers": "~1.0",
         "tinify/tinify": "^1.3"
-    }
+    },
+    "minimum-stability": "dev"
 }
